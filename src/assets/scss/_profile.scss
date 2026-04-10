@@ -1,0 +1,116 @@
+@use '../scss/variables' as vars;
+
+.profile {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    &__wrap-profile {
+        width: 1110px;
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 30px;
+        align-items: flex-start;
+        background-color: transparent;
+        border: none;
+        padding-top: 0;
+    }
+
+    &__wrap-profile--position {
+        align-items: flex-start;
+    }
+
+    &__btn-settings {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__wrap-left {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &__img {
+        width: 240px;
+        height: 240px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid vars.$descr-color;
+    }
+
+    &__btn-change {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 13px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    &__btn-text {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: underline;
+        text-decoration-color: vars.$yellow-color;
+        color: vars.$yellow-color;
+    }
+
+    &__wrap-right {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    &__name {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 36px;
+        line-height: 100%;
+        color: vars.$title-color;
+    }
+
+    &__wrap-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__key {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    &__value {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 18px;
+        line-height: 24px;
+        color: vars.$descr-black-color;
+        margin: 0;
+
+        &--size {
+            font-size: 16px;
+        }
+
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler", 
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]             
+    },
+    "skipLibCheck": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "types": ["jest", "node", "vitest/globals"]
+  },
+  "vueCompilerOptions": {
+    "globalTypesPath": "./node_modules/.vite/vue/macros-global.d.ts"
+  },
+  "include": [
+    "node_modules",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "src/shims-vue.d.ts"
+  ]
+}

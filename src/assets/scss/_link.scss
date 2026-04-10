@@ -1,0 +1,17 @@
+@use '../scss/variables' as vars;
+
+.link {
+    font-family: vars.$semi-bold-font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 183%;
+    color: vars.$yellow-color;
+    text-decoration: underline;
+    text-decoration-color: vars.$yellow-color;
+
+    &:hover,
+    &:focus-visible {
+        text-decoration: none;
+    }
+
+}

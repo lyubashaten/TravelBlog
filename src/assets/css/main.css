@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("../fonts/PoppinsSemiBold.woff2") format("woff2"), url("../fonts/PoppinsSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../fonts/PoppinsRegular.woff2") format("woff2"), url("../fonts/PoppinsRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "PoppinsRegular", sans-serif;
+  overflow-x: hidden;
+}
+
+#app {
+  max-width: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+@use '../scss/variables' as vars;
+
+.post-list {
+    margin: 60px 0;
+
+    &__wrap-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        background-color: vars.$heading-color;
+        max-width: 370px;
+        min-height: 552px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            box-shadow: 0px 1px 20px 0px rgba(255, 169, 2, 0.7);
+        }
+
+    }
+
+    &__image {
+        width: 370px;
+        height: 288px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 26px 25px 25px;
+    }
+
+    &__title {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 18px;
+        line-height: 100%;
+        color: vars.$title-color;
+    }
+
+    &__descr {
+        height: 82px;
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 15px;
+        line-height: 183%;
+        color: vars.$descr-color;
+    }
+
+    &__location {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+    &__station {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 183%;
+        color: vars.$title-color;
+    }
+
+}

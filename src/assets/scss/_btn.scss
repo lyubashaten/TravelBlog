@@ -1,0 +1,37 @@
+@use '../scss/variables' as vars;
+
+.btn-dark {
+    font-family: vars.$semi-bold-font-family;
+    font-weight: vars.$weight-600;
+    font-size: 16px;
+    line-height: 13px;
+    border-radius: 10px;
+    border: none;
+    background-color: vars.$yellow-color;
+    color: vars.$heading-color;
+    padding: 19px 30px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+        background-color: vars.$btn-hover-color;
+    }
+}
+
+.btn-light {
+    font-family: vars.$semi-bold-font-family;
+    font-weight: vars.$weight-600;
+    font-size: 16px;
+    line-height: 13px;
+    background-color: transparent;
+    color: vars.$yellow-color;
+    border: 2px solid vars.$yellow-color;
+    padding: 14px 30px;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+        border-color: vars.$btn-hover-color;
+    }
+}

@@ -1,0 +1,92 @@
+@use '../scss/variables' as vars;
+
+.one-post {
+    width: 1172px;
+    margin: 7px 0;
+    border-radius: 10px;
+    background-color: vars.$heading-color;
+
+    &__img {
+        width: 100%;
+        height: 450px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__wrap-general {
+        padding: 33px 102px;
+    }
+
+    &__wrap-post {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 31px;
+    }
+
+    &__title {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 36px;
+        line-height: 100%;
+        color: vars.$title-color;
+    }
+
+    &__descr {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 16px;
+        line-height: 24px;
+        color: vars.$descr-black-color;
+    }
+
+    &__wrap-info {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 16px;
+        line-height: 24px;
+        color: vars.$descr-black-color;
+        margin-bottom: 2px;
+    }
+
+    &__date {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: vars.$descr-color;
+        margin-bottom: 2px;
+    }
+
+    &__comment {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 16px;
+        line-height: 24px;
+        color: vars.$descr-black-color;
+        margin: 0;
+    }
+
+    &__wrap-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

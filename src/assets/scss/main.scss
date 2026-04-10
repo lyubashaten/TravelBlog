@@ -1,0 +1,39 @@
+@use './_variables.scss' as vars;
+@use './fonts';
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: vars.$main-bg-color;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'PoppinsRegular', sans-serif;
+  overflow-x: hidden;
+}
+
+
+#app {
+  max-width: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+}

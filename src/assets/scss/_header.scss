@@ -1,0 +1,147 @@
+@use '../scss/variables' as vars;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 29px;
+    margin-bottom: 30px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/main-bg-color.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        width: 100vw;
+        height: 422px;
+        z-index: -1;
+    }
+
+    &.header--other::after {
+        height: 251px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid vars.$border-color;
+    }
+
+    &__logo {
+        width: 181px;
+    }
+
+    &__btn-auth {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 16px;
+        line-height: 183%;
+        color: vars.$heading-color;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            color: vars.$btn-hover-color;
+            box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 16px;
+        line-height: 183%;
+        color: vars.$heading-color;
+        transition: color 0.3s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            color: vars.$yellow-color;
+        }
+    }
+
+    &__user-menu {
+        position: relative;
+    }
+
+    &__dropdown-menu {
+        position: absolute;
+        width: 70px;
+        top: 32px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+        background-color: vars.$heading-color;
+        border-radius: 2px;
+        padding: 8px;
+    }
+
+    &__menu-item {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 12px;
+        line-height: 183%;
+        color: vars.$menu-item-color;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        transition: color 0.3s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            color: vars.$yellow-color;
+        }
+    }
+
+    &__user-arrow {
+        width: 11px;
+        height: 8px;
+        color: vars.$heading-color;
+    }
+
+    &__title {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: vars.$heading-color;
+
+        &--main {
+            margin: 119px 0 156px;
+        }
+
+        &--other {
+            margin: 45px 40px;
+        }
+    }
+
+}

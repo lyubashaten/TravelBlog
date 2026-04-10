@@ -1,0 +1,221 @@
+@use '../scss/variables' as vars;
+
+.new-post {
+    background-color: vars.$heading-color;
+    border: 1px solid #E5E5EA;
+    border-radius: 10px;
+    padding-top: 46px;
+
+    &__info-wrap {
+        max-width: 695px;
+        height: 698px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 26px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 36px;
+        line-height: 100%;
+        color: vars.$title-color;
+        text-align: center;
+    }
+
+    &__heading {
+        font-family: vars.$semi-bold-font-family;
+        font-weight: vars.$weight-600;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+    }
+
+    &__wrap-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__wrap-input {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    &__label {
+        position: relative;
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.85);
+        padding-left: 11px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 31%;
+            width: 7px;
+            height: 7px;
+            background-image: url(../img/svg/necessarily.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__label--affter {
+        &::after {
+            display: none;
+        }
+    }
+
+    &__input-none {
+        display: none;
+    }
+
+    &__false-input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3px 16px;
+        border: 1px solid vars.$input-color;
+        border-radius: 2px;
+    }
+
+    &__input {
+        width: 694px;
+        height: 32px;
+        border: 1px solid vars.$input-color;
+        border-radius: 2px;
+        padding: 0;
+        margin: 0;
+        padding-left: 12px;
+        transition: border-color 0.3s ease-in-out;
+
+        &::placeholder {
+            font-family: vars.$regular-fonts-family;
+            font-weight: vars.$weight-400;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        &:hover,
+        &:focus-visible {
+            outline: none;
+            border-color: vars.$yellow-color;
+        }
+
+        &.error {
+            border: 1px solid vars.$error-color;
+        }
+
+    }
+
+    &__input--size {
+        width: 324px;
+    }
+
+    &__input--settings {
+        width: 830px;
+        height: 29px;
+    }
+
+    &__input--password {
+        width: 400px;
+    }
+
+    &__textarea {
+        width: 694px;
+        height: 89px;
+        border: 1px solid vars.$input-color;
+        border-radius: 2px;
+        padding: 5px 0 0 12px;
+        transition: border-color 0.3s ease-in-out;
+
+        &::placeholder {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        &:hover,
+        &:focus-visible {
+            outline: none;
+            border-color: vars.$yellow-color;
+        }
+
+        &.error {
+            border: 1px solid vars.$error-color;
+        }
+    }
+
+    &__textarea--settings {
+        width: 826px;
+        height: 127px;
+    }
+
+
+
+    &__wrap-input--position {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: -23px;
+        right: 0;
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.25);
+    }
+
+    &__wrap-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    &__password {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    &__massege {
+        font-family: vars.$regular-fonts-family;
+        font-weight: vars.$weight-400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        color: vars.$error-color;
+        display: none;
+
+        &.error {
+            display: flex;
+        }
+    }
+}
