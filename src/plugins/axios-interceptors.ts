@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://travelblog.skillbox.cc/api',
+  baseURL: 'https://travelblog.skillbox.cc/',
   headers: {
     'Content-Type': 'application/json',
   },
