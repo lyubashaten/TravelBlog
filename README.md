@@ -1,5 +1,7 @@
 # TravelBlog
 
+[![Live Demo](https://img.shields.io/badge/🚀-Live_Demo-brightgreen?style=for-the-badge)](https://lyubashaten.github.io/TravelBlog/)
+
 **TravelBlog** — веб-приложение для общения и обмена опытом среди путешественников.  
 Платформа позволяет пользователям делиться историями о поездках, оставлять отзывы (комментарии) и просматривать посты других участников.
 
