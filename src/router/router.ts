@@ -48,7 +48,8 @@ const routes = [
   {
     path: `/posts/:id/comments`,
     name: 'Comment',
-    component: CreateComment
+    component: CreateComment,
+    meta: { requiresAuth: true }
   },
 ]
 
