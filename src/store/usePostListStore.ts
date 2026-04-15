@@ -44,7 +44,7 @@ export const usePostListStore = defineStore('postList', () => {
 
     try {
       console.log('Начало загрузки постов...')
-      const response = await fetch('/api/posts')
+      const response = await fetch('https://travelblog.skillbox.cc/api/posts')
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
