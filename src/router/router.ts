@@ -17,7 +17,8 @@ const routes = [
   {
     path: `/create-post`,
     name: 'NewPost',
-    component: CreateNewPost
+    component: CreateNewPost,
+    meta: { requiresAuth: true }
   },
   {
     path: '/profile',
